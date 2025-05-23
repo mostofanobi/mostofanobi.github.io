@@ -1,14 +1,105 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import SmoothScroll from "@/components/SmoothScroll";
+import { Funnel_Display, Plus_Jakarta_Sans, Unbounded } from "next/font/google";
+
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+import localFont from "next/font/local";
+import PageBottomBlur from "@/components/PageBottomBlur";
+import GridLines from "@/components/GridLines";
+import CustomCursor from "@/components/CustomCursor";
+import TrailingLines from "@/components/TrailingLines";
+
+const oldschoolGrotesk = localFont({
+  src: [
+    {
+      path: "../../public/fonts/OldschoolGrotesk-Light.woff2",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/OldschoolGrotesk-Light.woff2",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/OldschoolGrotesk-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/OldschoolGrotesk-Heavy.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/OldschoolGrotesk-ExtraBold.woff2",
+      weight: "900",
+      style: "normal",
+    },
+  ],
+  variable: "--font-oldschool-grotesk",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const roobert = localFont({
+  src: [
+    {
+      path: "../../public/fonts/r3.woff2",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/r4.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/r5.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/r6.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/r7.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-roobert",
+});
+const acid = localFont({
+  src: [
+    {
+      path: "../../public/fonts/acid.woff2",
+      weight: "300",
+      style: "normal",
+    },
+  ],
   subsets: ["latin"],
+  variable: "--font-acid",
+});
+const shrimp = localFont({
+  src: [
+    {
+      path: "../../public/fonts/SHRIMP.ttf",
+      weight: "300",
+      style: "normal",
+    },
+  ],
+  subsets: ["latin"],
+  variable: "--font-shrimp",
+});
+
+const unbounded = Unbounded({
+  subsets: ["latin"],
+  variable: "--font-unbounded",
+});
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-jakarta",
 });
 
 export const metadata = {
@@ -18,11 +109,18 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html
+      lang="en"
+      className={`${jakarta.variable} ${oldschoolGrotesk.variable} ${unbounded.variable}`}
+    >
+      <body className="antialiased">
+        <SmoothScroll>
+          {/* <PageBottomBlur /> */}
+          {/* <GridLines /> */}
+          {/* <CustomCursor /> */}
+          <TrailingLines />
+          {children}
+        </SmoothScroll>
       </body>
     </html>
   );
