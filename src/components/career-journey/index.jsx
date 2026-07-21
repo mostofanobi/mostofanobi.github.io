@@ -81,7 +81,7 @@ const RoleCard = ({ role, onClick }) => {
     >
       <div className="flex gap-2 items-center">
         <Image
-          src="/images/logos/technext.png"
+          src="./images/logos/technext.png"
           height={100}
           width={100}
           alt="technext"
@@ -89,7 +89,7 @@ const RoleCard = ({ role, onClick }) => {
         />
         <HugeiconsIcon icon={Cancel01Icon} size={18} />
         <Image
-          src="/images/logos/themewagon.png"
+          src="./images/logos/themewagon.png"
           height={100}
           width={100}
           alt="themewagon"

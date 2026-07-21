@@ -86,7 +86,7 @@ const RoleDetail = ({ role, currentIndex, total, onClose, onPrev, onNext }) => {
           <div className="mb-15">
             <div className="flex gap-2 items-center pt-2 mb-8">
               <Image
-                src="/images/logos/technext.png"
+                src="./images/logos/technext.png"
                 height={100}
                 width={100}
                 alt="technext"
@@ -94,7 +94,7 @@ const RoleDetail = ({ role, currentIndex, total, onClose, onPrev, onNext }) => {
               />
               <HugeiconsIcon icon={Cancel01Icon} size={18} />
               <Image
-                src="/images/logos/themewagon.png"
+                src="./images/logos/themewagon.png"
                 height={100}
                 width={100}
                 alt="themewagon"
