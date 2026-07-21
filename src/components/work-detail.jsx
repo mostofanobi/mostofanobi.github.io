@@ -61,7 +61,7 @@ const WorkDetail = ({
   };
 
   return (
-    <div ref={scrollContainerRef} className="pb-16 overflow-hidden">
+    <div ref={scrollContainerRef} className="pb-16">
       <AnimatePresence mode="popLayout" custom={direction} initial={false}>
         <motion.div
           key={project.id}
@@ -144,7 +144,7 @@ const WorkDetail = ({
               {(project.previews ?? []).map((preview, idx) => (
                 <div
                   key={`${project.id}-preview-${idx}`}
-                  className="relative overflow-hidden bg-[#F2F2F2] rounded-2xl w-full aspect-video shadow-xl"
+                  className="relative overflow-hidden bg-background rounded-2xl w-full aspect-video shadow-xl"
                 >
                   {preview.type === "image" && (
                     <Image
@@ -176,8 +176,8 @@ const WorkDetail = ({
       </AnimatePresence>
 
       {/* Sticky prev/next nav */}
-      <div className="fixed bottom-0 left-0 right-0 px-4 pb-5 pt-3 pointer-events-none flex justify-center">
-        <div className="w-fit flex justify-center items-center gap-1 pointer-events-auto p-2 rounded-full bg-[#E6E6E6]/60 backdrop-blur-lg border border-white/20 shadow-2xl">
+      <div className="absolute bottom-0 left-0 right-0 px-4 pb-5 pt-3 pointer-events-none flex justify-center">
+        <div className="w-fit flex justify-center items-center gap-1 pointer-events-auto p-2 rounded-full bg-neutral-200/60 backdrop-blur-lg border border-white/20 shadow-2xl">
           <button
             onClick={handlePrev}
             disabled={isFirst}

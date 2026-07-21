@@ -15,7 +15,7 @@ const ROW_H = 150;
 const PX_PER_MONTH = ROW_H / 12;
 const CARD_GAP = 10;
 const LANE_WIDTH = 28;
-const LANE_TO_CARD_GAP = 20;
+const LANE_TO_CARD_GAP = 14;
 const YEARS = [2027, 2026, 2025, 2024, 2023, 2022, 2021];
 const MONTH_NAMES = [
   "JAN",
@@ -76,7 +76,7 @@ const RoleCard = ({ role, onClick }) => {
   return (
     <div
       onClick={() => onClick(role)}
-      className="absolute cursor-pointer right-0 rounded-3xl shadow-md bg-[#F2F2F2] px-4 py-3 flex flex-col justify-between hover:-translate-y-1 hover:shadow-xl hover:bg-[#eeeeee] active:scale-[0.98] transition-all text-left"
+      className="absolute cursor-pointer right-0 rounded-3xl shadow-lg bg-background px-4 py-3 flex flex-col justify-between hover:-translate-y-1 hover:shadow-xl hover:brightness-98 active:scale-[0.98] transition-all text-left"
       style={{ top, height, left }}
     >
       <div className="flex gap-2 items-center">
@@ -97,12 +97,12 @@ const RoleCard = ({ role, onClick }) => {
         />
       </div>
       <div>
-        <p className="text-[13px] font-medium leading-snug">
+        <p className="text-sm font-medium leading-snug">
           {role.title}
-          <span className="text-zinc-500"> · </span>
-          <span className="text-zinc-400">{role.company}</span>
+          <span className="text-foreground/50"> · </span>
+          <span className="text-foreground/50">{role.company}</span>
         </p>
-        <p className="mt-1 font-mono text-[10px] uppercase tracking-wide text-zinc-500">
+        <p className="mt-2 font-mono text-[0.625rem] font-medium uppercase tracking-wide text-zinc-500">
           {monthLabel(role.start)} —{" "}
           {role.current ? "PRESENT" : monthLabel(role.end)}
         </p>
@@ -136,7 +136,7 @@ const CareerJourney = () => {
   return (
     <div
       data-card
-      className="relative bg-[#E6E6E6] shrink-0 max-w-115 w-full h-full overflow-hidden rounded-4xl"
+      className="relative bg-neutral-200 shrink-0 max-w-115 w-full h-full overflow-hidden rounded-4xl"
     >
       <div className="absolute z-20 left-1/2 -translate-x-1/2 top-0">
         <p className="z-10 uppercase text-xs font-medium text-foreground/60 absolute font-mono left-1/2 top-1/2 -translate-1/2 flex items-center gap-2.5">
@@ -176,14 +176,14 @@ const CareerJourney = () => {
 
             <div className="relative flex-1">
               <div
-                className="absolute z-10 bottom-0 left-2 rounded-lg bg-[#A7F55C] flex items-center justify-center"
+                className="absolute z-10 bottom-0 left-1.5 rounded-lg bg-accent flex items-center justify-center"
                 style={{
                   width: LANE_WIDTH,
                   top: Math.max(offsetFor(TODAY), 0),
                 }}
               >
                 <span
-                  className="font-mono text-[10px] uppercase tracking-widest font-semibold whitespace-nowrap"
+                  className="font-mono text-[0.625rem] uppercase tracking-widest font-semibold whitespace-nowrap"
                   style={{
                     writingMode: "vertical-rl",
                     transform: "rotate(180deg)",

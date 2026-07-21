@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <div
       data-card
-      className="relative bg-[#E6E6E6] shrink-0 max-w-115 w-full h-full overflow-hidden rounded-4xl"
+      className="relative bg-neutral-200 shrink-0 max-w-115 w-full h-full overflow-hidden rounded-4xl"
     >
       <div className="absolute z-20 left-1/2 -translate-x-1/2 top-0">
         <p className="z-10 uppercase text-xs font-medium text-foreground/60 absolute font-mono left-1/2 top-1/2 -translate-1/2 flex items-center gap-2.5">

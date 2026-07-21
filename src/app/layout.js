@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${googleSans.variable} ${googleSansCode.variable} h-full font-sans bg-background antialiased`}
+      className={`${googleSans.variable} ${googleSansCode.variable} h-full font-sans bg-background antialiased text-[15px]`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

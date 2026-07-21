@@ -23,7 +23,7 @@ const ContactBtns = () => {
     <div className="flex gap-3">
       <button
         onClick={handleCopy}
-        className="cursor-pointer h-16 flex-1 rounded-full backdrop-blur-none bg-[#E6E6E6] hover:bg-background hover:-translate-y-1 transition-all text-foreground font-medium flex gap-2 justify-center items-center"
+        className="cursor-pointer h-16 flex-1 rounded-full backdrop-blur-none bg-neutral-200 hover:bg-background hover:-translate-y-1 transition-all text-foreground font-medium flex gap-2 justify-center items-center"
       >
         <HugeiconsIcon icon={ClipboardIcon} />{" "}
         {copy ? "Email Copied" : "Copy Email"}

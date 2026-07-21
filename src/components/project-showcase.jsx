@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import { useState } from "react";
 import Drawer from "./drawer";
@@ -40,12 +41,12 @@ const ProjectShowcase = ({
             <div
               key={project.id}
               onClick={() => handleCardClick(project, index)}
-              className="relative group cursor-pointer h-auto w-full text-left group flex flex-col bg-[#F2F2F2] p-1.5 shadow-none rounded-4xl 
+              className="relative group cursor-pointer h-auto w-full text-left group flex flex-col bg-background p-1.5 shadow-none rounded-4xl 
               transition-all duration-200 ease-out 
               hover:-translate-y-1 hover:border-none hover:shadow-[0_8px_24px_rgba(0,0,0,0.10)]
               active:scale-[0.98] active:translate-y-0"
             >
-              <div className="relative overflow-hidden bg-[#F2F2F2] rounded-[26px] w-full aspect-4/3 shadow-2xl">
+              <div className="relative overflow-hidden bg-background rounded-3xl w-full aspect-4/3 shadow-2xl">
                 <Image
                   fill
                   className="object-cover group-hover:brightness-90 transition-all"
@@ -53,7 +54,7 @@ const ProjectShowcase = ({
                   alt={project.name}
                 />
               </div>
-              <div className="bg-[#F2F2F2] rounded-b-4xl w-full pt-5 pb-2 pl-4 flex flex-col justify-end">
+              <div className="bg-background rounded-b-4xl w-full pt-5 pb-2 pl-4 flex flex-col justify-end">
                 <div className="flex items-center gap-4">
                   {project.logo && (
                     <Image
@@ -74,11 +75,11 @@ const ProjectShowcase = ({
             <div
               key={project.id}
               onClick={() => handleCardClick(project, index)}
-              className="relative group cursor-pointer h-auto w-full text-left flex flex-col rounded-4xl bg-[#F2F2F2] p-1.5 shadow-none transition-all duration-200 ease-out 
+              className="relative group cursor-pointer h-auto w-full text-left flex flex-col rounded-4xl bg-background p-1.5 shadow-none transition-all duration-200 ease-out 
               hover:-translate-y-1 hover:border-none hover:shadow-[0_8px_24px_rgba(0,0,0,0.10)]
               active:scale-[0.98] active:translate-y-0"
             >
-              <div className="relative overflow-hidden bg-[#F2F2F2] rounded-[26px] w-full aspect-4/3 shadow-xl transition-all duration-200 ease-out">
+              <div className="relative overflow-hidden bg-background rounded-3xl w-full aspect-4/3 shadow-xl transition-all duration-200 ease-out">
                 <Image
                   fill
                   className="object-cover group-hover:brightness-90 transition-all"

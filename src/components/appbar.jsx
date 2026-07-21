@@ -25,7 +25,7 @@ const Appbar = ({ scrollRef }) => {
     <header className="bg-background fixed right-0 bottom-0 left-0 z-80 px-5 md:top-0 md:bottom-auto">
       <div className="absolute left-1/2 -translate-x-1/2 md:top-0 md:bottom-[unset] -bottom-px">
         <p className="z-10 text-white uppercase text-xs absolute font-mono left-1/2 top-1/2 -translate-1/2 flex items-center gap-2.5">
-          <span className="size-1.5 rounded-full bg-[#A7F55C] shrink-0 inline-block"></span>
+          <span className="size-1.5 rounded-full bg-accent shrink-0 inline-block"></span>
           OPEN TO WORK
         </p>
         <svg
@@ -42,13 +42,13 @@ const Appbar = ({ scrollRef }) => {
         <div className="flex items-center gap-2">
           <button
             onClick={() => scrollBy("left")}
-            className="size-10 cursor-pointer rounded-full shrink-0 bg-[#E6E6E6] hover:bg-[#CCCCCC] transition-colors flex items-center justify-center"
+            className="size-10 cursor-pointer rounded-full shrink-0 bg-neutral-200 hover:bg-neutral-300 transition-colors flex items-center justify-center"
           >
             <HugeiconsIcon icon={ArrowLeft01Icon} size={16} />
           </button>
           <button
             onClick={() => scrollBy("right")}
-            className="size-10 cursor-pointer rounded-full shrink-0 bg-[#E6E6E6] hover:bg-[#CCCCCC] transition-colors flex items-center justify-center"
+            className="size-10 cursor-pointer rounded-full shrink-0 bg-neutral-200 hover:bg-neutral-300 transition-colors flex items-center justify-center"
           >
             <HugeiconsIcon icon={ArrowRight01Icon} size={16} />
           </button>
