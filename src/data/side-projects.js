@@ -28,6 +28,16 @@ const projects = [
       link: "https://muslamul-haq.vercel.app/",
     },
   },
+  {
+    id: "backup247",
+    name: "Backup247",
+    cover: "./images/backup247/cover.png",
+    excerpt:
+      "Australia's trusted partner in cloud backup, built for performance, security, and peace of mind.",
+    metadata: {
+      link: "https://backup247.vercel.app/",
+    },
+  },
 ];
 
 export default projects;
