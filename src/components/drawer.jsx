@@ -25,7 +25,7 @@ const Drawer = ({ open, onClose, children, height = "95%" }) => {
           <motion.div
             key="backdrop"
             onClick={onClose}
-            className="absolute inset-0 z-50 rounded-4xl bg-black/25 backdrop-blur-[2px]"
+            className="absolute inset-0 z-20 rounded-4xl bg-black/25 backdrop-blur-[2px]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
