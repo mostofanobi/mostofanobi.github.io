@@ -20,7 +20,7 @@ const AboutMe = () => {
           <div className="px-5 mb-15">
             <div className="relative w-full aspect-[1/1.3] rounded-4xl overflow-hidden">
               <Image
-                src="/images/me.jpeg"
+                src="./images/me.jpeg"
                 fill
                 alt="Mostofa nobi"
                 className="object-cover object-top"
