@@ -40,7 +40,7 @@ const ProjectShowcase = ({
             <div
               key={project.id}
               onClick={() => handleCardClick(project, index)}
-              className="relative cursor-pointer h-auto w-full text-left group flex flex-col bg-[#F2F2F2] p-1.5 shadow-none rounded-4xl 
+              className="relative group cursor-pointer h-auto w-full text-left group flex flex-col bg-[#F2F2F2] p-1.5 shadow-none rounded-4xl 
               transition-all duration-200 ease-out 
               hover:-translate-y-1 hover:border-none hover:shadow-[0_8px_24px_rgba(0,0,0,0.10)]
               active:scale-[0.98] active:translate-y-0"
@@ -48,7 +48,7 @@ const ProjectShowcase = ({
               <div className="relative overflow-hidden bg-[#F2F2F2] rounded-[26px] w-full aspect-4/3 shadow-2xl">
                 <Image
                   fill
-                  className="object-cover"
+                  className="object-cover group-hover:brightness-90 transition-all"
                   src={project.cover}
                   alt={project.name}
                 />
@@ -81,15 +81,16 @@ const ProjectShowcase = ({
               <div className="relative overflow-hidden bg-[#F2F2F2] rounded-[26px] w-full aspect-4/3 shadow-xl transition-all duration-200 ease-out">
                 <Image
                   fill
-                  className="object-cover"
+                  className="object-cover group-hover:brightness-90 transition-all"
                   src={project.cover}
                   alt={project.name}
                 />
-              </div>
-              <div className="w-full p-5 flex flex-col justify-end">
-                <p className="text-sm text-pretty">
-                  <b>{project.name}</b> — {project.excerpt}
-                </p>
+
+                <div className="absolute z-10 left-0 bottom-0 w-full p-5 flex flex-col justify-end bg-background translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <p className="relative text-xs text-pretty">
+                    <b>{project.name}</b> — {project.excerpt}
+                  </p>
+                </div>
               </div>
             </div>
           ),
