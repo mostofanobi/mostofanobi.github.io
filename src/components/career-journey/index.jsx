@@ -76,12 +76,12 @@ const RoleCard = ({ role, onClick }) => {
   return (
     <div
       onClick={() => onClick(role)}
-      className="absolute cursor-pointer right-0 rounded-3xl shadow-lg bg-background px-4 py-3 flex flex-col justify-between hover:-translate-y-1 hover:shadow-xl hover:brightness-98 active:scale-[0.98] transition-all text-left"
+      className="absolute cursor-pointer right-0 rounded-3xl shadow-lg bg-white px-4 py-3 flex flex-col justify-between hover:-translate-y-1 hover:shadow-xl hover:brightness-98 active:scale-[0.98] transition-all text-left"
       style={{ top, height, left }}
     >
       <div className="flex gap-2 items-center">
         <Image
-          src="./images/logos/technext.png"
+          src="/images/logos/technext.png"
           height={100}
           width={100}
           alt="technext"
@@ -89,7 +89,7 @@ const RoleCard = ({ role, onClick }) => {
         />
         <HugeiconsIcon icon={Cancel01Icon} size={18} />
         <Image
-          src="./images/logos/themewagon.png"
+          src="/images/logos/themewagon.png"
           height={100}
           width={100}
           alt="themewagon"
@@ -136,7 +136,7 @@ const CareerJourney = () => {
   return (
     <div
       data-card
-      className="relative bg-neutral-200 shrink-0 max-w-115 w-full h-full overflow-hidden rounded-4xl"
+      className="relative bg-neutral-200 shadow-inset shrink-0 max-w-115 w-full h-full overflow-hidden rounded-4xl"
     >
       <div className="absolute z-20 left-1/2 -translate-x-1/2 top-0">
         <p className="z-10 uppercase text-xs font-medium absolute font-mono left-1/2 top-1/2 -translate-1/2 flex items-center gap-2.5">

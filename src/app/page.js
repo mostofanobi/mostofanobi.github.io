@@ -3,6 +3,7 @@ import CareerJourney from "@/components/career-journey";
 import HighlightedWork from "@/components/highlighted-work";
 import SideProjects from "@/components/side-projects";
 import ScrollablePortfolio from "@/components/scrollable-portfolio";
+import Exploring from "@/components/exploring";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <CareerJourney />
       <HighlightedWork />
       <SideProjects />
+      <Exploring />
       <div
         className="w-[0.5px] shrink-0"
         data-aria-hidden="true"

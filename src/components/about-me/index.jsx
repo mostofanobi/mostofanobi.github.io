@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <div
       data-card
-      className="relative bg-neutral-200 shrink-0 max-w-115 w-full h-full overflow-hidden rounded-4xl"
+      className="relative bg-neutral-200 shadow-inset shrink-0 max-w-115 w-full h-full overflow-hidden rounded-4xl"
     >
       <div className="absolute z-20 left-1/2 -translate-x-1/2 top-0">
         <p className="z-10 uppercase text-xs font-medium absolute font-mono left-1/2 top-1/2 -translate-1/2 flex items-center gap-2.5">
@@ -27,12 +27,13 @@ const AboutMe = () => {
           <div className="px-5 mb-15">
             <div className="relative w-full aspect-[1/1.3] rounded-4xl overflow-hidden">
               <Image
-                src="./images/me.jpeg"
+                src="/images/me.jpeg"
                 fill
                 alt="Mostofa nobi"
                 className="object-cover object-top"
               />
 
+              <div className="absolute size-full inset-0 shadow-inset"></div>
               <div className="absolute h-2/3 w-full bottom-0 left-0 bg-linear-to-t from-foreground to-transparent"></div>
               <div className="absolute bottom-0 left-0 w-full p-2">
                 <div className="w-full rounded-4xl backdrop-blur bg-white/10 text-white border border-white/10 saturate-120 shadow-[inset_2px_2px_3px_-1px_#ffffff70,inset_-2px_-2px_3px_-1px_#ffffff70,inset_0_0_16px_#ffffff50,0_4px_12px_-2px_#ffffff40] pt-8 pb-4 px-6 flex flex-col justify-between gap-8">

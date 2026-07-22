@@ -1,7 +1,7 @@
-import projects from "@/data/highlighted-projects";
-import ProjectShowcase from "../project-showcase";
+import AIAssistedEngineering from "./ai-assisted-engineering";
+import BackendDevelopment from "./backend-development";
 
-const HighlightedWork = () => {
+const Exploring = () => {
   return (
     <div
       data-card
@@ -9,7 +9,7 @@ const HighlightedWork = () => {
     >
       <div className="absolute z-20 left-1/2 -translate-x-1/2 top-0">
         <p className="z-10 uppercase text-xs font-medium absolute font-mono left-1/2 top-1/2 -translate-1/2 flex items-center gap-2.5">
-          HIGHLIGHTED WORK
+          EXPLORING
         </p>
         <svg
           viewBox="0 0 342 36"
@@ -24,8 +24,10 @@ const HighlightedWork = () => {
         <div>
           <div className="h-16" />
 
-          <div className="px-5 mb-15">
-            <ProjectShowcase projects={projects} />
+          <div className="px-5 mb-15 space-y-8">
+            {/* Content */}
+            <AIAssistedEngineering />
+            <BackendDevelopment />
           </div>
         </div>
       </div>
@@ -33,4 +35,4 @@ const HighlightedWork = () => {
   );
 };
 
-export default HighlightedWork;
+export default Exploring;

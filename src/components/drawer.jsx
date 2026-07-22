@@ -34,7 +34,7 @@ const Drawer = ({ open, onClose, children, height = "95%" }) => {
 
           <motion.div
             key="sheet"
-            className="absolute left-0 right-0 bottom-0 z-30 bg-neutral-200 rounded-t-4xl flex flex-col"
+            className="absolute shadow-inset left-0 right-0 bottom-0 z-30 bg-neutral-200 rounded-t-4xl flex flex-col"
             style={{ height }}
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
