@@ -20,6 +20,16 @@ const projects = [
     },
   },
   {
+    id: "foliov5",
+    name: "Portfolio v5",
+    cover: "/images/folio/v5.png",
+    excerpt:
+      "One of my exploration in writing a portfolio website with animation and interactive scroll effects.",
+    metadata: {
+      link: "https://mostofanobi.github.io/folio-v5/",
+    },
+  },
+  {
     id: "muslamul-haq",
     name: "Muslamul Haq",
     cover: "/images/muslamul-haq/cover.png",
