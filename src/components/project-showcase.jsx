@@ -46,7 +46,7 @@ const ProjectShowcase = ({
               hover:-translate-y-1 hover:border-none hover:shadow-[0_8px_24px_rgba(0,0,0,0.10)]
               active:scale-[0.98] active:translate-y-0"
             >
-              <div className="relative overflow-hidden bg-background rounded-3xl w-full aspect-4/3 shadow-2xl">
+              <div className="relative overflow-hidden bg-background rounded-3xl w-full aspect-4.5/3 shadow-2xl">
                 <Image
                   fill
                   className="object-cover group-hover:brightness-90 transition-all"

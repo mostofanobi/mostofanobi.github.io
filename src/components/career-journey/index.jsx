@@ -76,7 +76,7 @@ const RoleCard = ({ role, onClick }) => {
   return (
     <div
       onClick={() => onClick(role)}
-      className="absolute cursor-pointer right-0 rounded-3xl shadow-lg bg-white px-4 py-3 flex flex-col justify-between hover:-translate-y-1 hover:shadow-xl hover:brightness-98 active:scale-[0.98] transition-all text-left"
+      className="absolute cursor-pointer right-0 rounded-3xl shadow-lg bg-neutral-50 px-4 py-3 flex flex-col justify-between hover:-translate-y-1 hover:shadow-xl hover:brightness-98 active:scale-[0.98] transition-all text-left"
       style={{ top, height, left }}
     >
       <div className="flex gap-2 items-center">
