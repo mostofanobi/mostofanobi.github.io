@@ -109,7 +109,7 @@ const MarqueeRow = ({ items, direction = "left", duration = 25 }) => {
 const AIAssistedEngineering = () => {
   return (
     <div className="relative group h-auto w-full text-left flex flex-col rounded-4xl bg-background p-1.5 shadow-none transition-all duration-200 ease-out hover:-translate-y-1 hover:border-none hover:shadow-[0_8px_24px_rgba(0,0,0,0.10)] active:scale-[0.98] active:translate-y-0">
-      <div className="relative bg-white overflow-hidden rounded-3xl w-full shadow-xl transition-all duration-200 ease-out">
+      <div className="relative bg-neutral-50 overflow-hidden rounded-3xl w-full shadow-xl transition-all duration-200 ease-out">
         <div className="relative w-full">
           {/* Techs marquee */}
           <div className="relative flex flex-col overflow-hidden pt-15 pb-8 gap-8">
