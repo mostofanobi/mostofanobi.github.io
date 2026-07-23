@@ -31,7 +31,6 @@ const AboutMe = () => {
                 fill
                 alt="Mostofa nobi"
                 className="object-cover object-top"
-                sizes="(max-width: 768px) 100vw, 450px"
               />
 
               <div className="absolute size-full inset-0 shadow-inset"></div>

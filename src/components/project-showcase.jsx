@@ -52,7 +52,6 @@ const ProjectShowcase = ({
                   className="object-cover group-hover:brightness-90 transition-all"
                   src={project.cover}
                   alt={project.name}
-                  sizes="(max-width: 768px) 100vw, 450px"
                 />
               </div>
               <div className="bg-background rounded-b-4xl w-full pt-5 pb-2 pl-4 flex flex-col justify-end">
@@ -86,7 +85,6 @@ const ProjectShowcase = ({
                   className="object-cover group-hover:brightness-90 transition-all"
                   src={project.cover}
                   alt={project.name}
-                  sizes="(max-width: 768px) 100vw, 450px"
                 />
 
                 <div className="absolute z-10 left-0 bottom-0 w-full p-5 flex flex-col justify-end bg-background translate-y-full group-hover:translate-y-0 transition-transform duration-300">

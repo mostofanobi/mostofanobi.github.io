@@ -154,7 +154,6 @@ const WorkDetail = ({
                       alt=""
                       placeholder="blur"
                       blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8+e1bPQAJUQNyjPBq5gAAAABJRU5ErkJggg=="
-                      sizes="(max-width: 768px) 100vw, 450px"
                     />
                   )}
 
